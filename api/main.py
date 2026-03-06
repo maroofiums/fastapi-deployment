@@ -5,6 +5,6 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"message": "FastAPI on Vercel!"}
+    return {"message": "FastAPI on Vercel working!"}
 
-handler = Mangum(app)  # serverless adapter
+handler = Mangum(app)  # This is important for serverless
